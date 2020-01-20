@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+
+<script href="../js/jquery.js"></script>
+
+<script href="../js/custom.js"></script> <!-- не работает -->
+
+<h2> WORD COUNT </h2>
+
+<form action="{% url 'count' %}">
+    <textarea cols="50" rows="10" name="fulltext"></textarea>
+    
+    <br/>
+    <input type="submit" style="margin-top: 20px" value="COUNT"/> <!-- submit tag add information as a parameter -->
+</form>
+
+<form action="{% url 'about' %}">
+
+    <p>
+        <b>Ваше имя:</b>
+        <br>
+        <input id="nameedit" type="text" size="40" name="nametext"/>
+    </p>
+    <input id="namesubmit" type="submit" value="ABOUT"/>
+
+</form>
